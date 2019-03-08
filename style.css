@@ -1,0 +1,198 @@
+body {
+    background-color: #372427;
+    
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+}
+
+p {
+    color: white;
+    font-size: 15px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 800;
+    margin: 10px ;
+    line-height: 2em;
+    word-wrap: break-word;
+    
+    
+}
+
+.login {
+    
+    color: white;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 800;
+    margin: 30px 0 2px 20px; 
+
+}
+
+main {
+    height: 100%;
+    grid-gap: 5px;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr) ;
+    grid-template-columns: 40% 60%;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+    
+}
+
+
+
+
+
+
+h1 {
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 40px;
+    color: white;
+    line-height: 1.5em;
+
+    
+}
+
+
+.happy {
+
+    background-color: #E9363D;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-row: span 2;
+    grid-column: span 1;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+.tie, .moped, .flower, .sax  {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+    
+.lorem, .cupcake, .bacon {
+   
+   background-color: #6EB5A3;
+   padding: 15px;
+   display: grid;
+   grid-row: span 2;
+   grid-column: span 1;
+   
+
+
+
+}
+
+  
+.tie {
+    background-image: url(images/tie.png);
+    grid-column: span 2;
+    grid-row: span 1;
+
+}
+.sign {
+    background-image: url(images/sign.jpg);
+    grid-column: span 1;
+    grid-row: span 2;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+.moped {
+    background-image: url(images/moped.jpg);
+    grid-column: span 2;
+    grid-row: span 1;
+
+}
+.light {
+    background-image: url(images/light.jpg);
+    grid-column: span 1;
+    grid-row: span 2;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.sax {
+    background-image: url(images/sax.jpg);
+    grid-column: span 2;
+    grid-row: span 1;
+
+}
+.flower {
+    background-image: url(images/flower.jpg);
+    grid-column: span 2;
+    grid-row: span 1;
+
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+    main {
+
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4, 1fr); 
+    padding: 0 40px 40px 40px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+    .happy {
+        height: 100px;
+        grid-column: span 1;
+        grid-row: span 1;
+
+    }
+    
+    .cupcake, .sign, .lorem, .bacon  {
+        height: 200px;
+        grid-column: span 1;
+        grid-row: span 2; 
+    }
+    
+    .tie, .moped {
+        height: 200px;
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    
+    .light, .flower, .sax {
+        height: 100px;
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .lorem, .cupcake, .bacon {
+        contain: content;
+        
+    }
+    p {
+        font-size: 10px; 
+   }
+
+   .login {
+    
+    color: white;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 800;
+    margin: 30px 0 2px 60px; 
+
+}
+}
+
